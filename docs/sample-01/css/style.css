@@ -33,6 +33,7 @@ a:hover{
     margin: 0 auto;
 }
 
+/*header*/
 #header{
     display: flex;
     align-items: center;
@@ -60,17 +61,54 @@ a:hover{
     margin-left: 40px;
 }
 
+/*main-visual*/
+.mainvisual{
+    margin-bottom: 80px;
+}
+
+.introduction{
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.introduction .catchphrase{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.introduction .text{
+    font-size: 14px;
+}
+
+
+
+
 /*---------------------
 スマートフォン
 ---------------------*/
 
 @media screen and (max-width:767px){
+    /*ヘッダー*/
     #header{
         padding-top: 25px;
         padding-bottom: 25px;
     }
-
     #header .logo{
         max-width: 120px;
+    }
+
+    /*メインボックス*/
+    .mainvisual{
+        margin-bottom: 50px;
+    }
+    .introduction{
+        margin-bottom: 50px;
+    }
+    .introduction .catchphrase{
+        font-size: 16px;
+    }
+    .introduction .text{
+        text-align: left;
     }
 }
